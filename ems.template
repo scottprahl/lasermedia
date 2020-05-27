@@ -1,0 +1,18 @@
+# Optical emission spectrum of {$sample_atom}:{$sample_host} ({$name_chem_txt})
+# assuming unity concentration per meter.  This data was part of the NASA 
+# Laser Spectra Database found on the web until December of 2005 which
+# was created by Pat Cross working at NASA Langley Research Center, Internal
+# Operations Group, Aerospace Electronics Systems Division, Remote Sensing.
+#
+# The spectra was collected by {$initials} on {$exp_date} and was 
+# annotated on {$rec_date}.  The sample name was "{$sample}" was a {$thickness}
+# long piece of {$atom}:{$host}. {$sample_polaralization} 
+# {$lambda_pol}
+#
+# Spectra were recorded from {$lambda_min}nm to {$lambda_max}nm
+# every {$lambda_delta}nm at room temperature.  The
+# excitation wavelength was {$lambda_exc ? $lambda_exc . 'nm' : 'unknown'}.
+#
+# {$note}
+#
+##Wavelength (nm)	Absorbance (/meter) 

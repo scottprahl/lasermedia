@@ -1,0 +1,19 @@
+		<h3>Absorption</h3>
+		
+		<div id="absPlot" style="width: 540px; height: 400px; margin: 0 auto"></div>
+
+		<p>	
+		The spectra was collected by {$initials} on {$exp_date}.
+		The sample was {$thickness} mm thick.
+		{$sample_polarization} 
+		</p>
+
+		<p>		
+		Spectra were recorded from {$lambda_min} to {$lambda_max}nm
+		every {$lambda_delta}nm at room temperature.
+		{$lambda_pol}
+        </p>
+
+		<p style="text-align:center">
+		<A HREF="../data/{$name_id}-orig-abs.txt">Original Data</A> |
+		<A HREF="../data/{$name_id}-abs.txt">Extinction Data</A> 

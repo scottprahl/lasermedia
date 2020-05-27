@@ -1,0 +1,85 @@
+var chart;
+$(document).ready(function() \{
+chart = new Highcharts.Chart(\{
+    chart: \{
+      renderTo: 'absPlot', 
+      zoomType: 'xy',
+      defaultSeriesType: 'line',
+      backgroundColor : null
+    \},
+    title: \{
+      text: "{$abs_unicode_name}"
+    \},
+	credits: \{
+		enabled: true,
+		href: "http://omlc.org/spectra/PhotochemCAD/html/{$abs_name}.html",
+		text: "omlc.org",
+		position: \{
+			align:'right',
+			x : -15,
+			verticalAlign: 'bottom',
+			y : -60,
+		\}
+	\},
+    xAxis: \{
+      title: \{
+        enabled: true,
+        text: 'Wavelength (nm)'
+      \},
+      startOnTick: true,
+      endOnTick: true,
+      showFirstLabel: false,
+      showLastLabel: false,
+      maxPadding: 0.05,
+      gridLineWidth: 1,
+    \},
+    yAxis: \{
+      title: \{
+        enabled: true,
+        text: 'Absorption for unity concentration (m\u207B\u00B9)'
+      \},
+      startOnTick: true,
+      endOnTick: true,
+      showFirstLabel: false,
+      showLastLabel: false,
+      maxPadding: 0.05,
+      gridLineWidth: 1,
+      labels: \{ formatter: function() \{return this.value;\} \}
+    \},
+    tooltip: \{
+      formatter: function() \{
+        return this.x.toFixed(2) + 'nm, ' + this.y +'m\u207B\u00B9';
+      \}
+    \},
+    legend: \{
+      enabled:false
+    \},
+	plotOptions: \{
+		line: \{
+			lineWidth: 1,
+			marker: \{
+				enabled: false,
+				states: \{
+					hover: \{
+						enabled: true,
+						radius: 5
+					\}
+				\}
+			\},
+			shadow: false,
+			states: \{
+				hover: \{
+					lineWidth: 1
+				\}
+			\}
+		\},
+     \},
+  series: [
+\{
+	color: 'rgba(223, 83, 83, 1.0)',
+	pointInterval: {$x_abs_interval},
+	pointStart: {$x_abs_start},
+	data: {$abs_js_data},
+\}]
+\});
+\});

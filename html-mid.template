@@ -1,0 +1,16 @@
+    <h3>Fluorescence</h3>
+		
+    <div id="emsPlot" style="width: 540px; height: 400px; margin: 0 auto"></div>
+
+	<p> The fluorescence emission spectrum of {$abs_htmlName}
+	dissolved in {$ems_Solvent}.  {$exc_sentence} 
+	The quantum yield of this molecule is {$ems_QuantumYield} {$ems_short_reference}.
+	This spectrum was collected by {$ems_full_author} {$ems_fDate} 
+    using a {$ems_Instrument}. 
+    {$ems_full_instrument}</p>
+
+	<p style="text-align:center">
+	<A HREF="../data/{$id}-orig-ems.txt">Original Data</A> |
+	<A HREF="../data/{$id}-ems.txt">Emission Data</A> 
+	</p>
+

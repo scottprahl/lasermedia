@@ -1,0 +1,22 @@
+    <h3>Fluorescence</h3>
+		
+    <div id="emsPlot" style="width: 540px; height: 400px; margin: 0 auto"></div>
+
+	<p> 
+	This emission spectra of {$name_chem_html} was collected by {$initials} on {$exp_date}.  
+	The sample was {$thickness}mm thick. 
+	{$sample_polarization} 
+	</p>
+	
+	<p> 
+	Spectra were recorded from {$lambda_min} to {$lambda_max}nm
+	every {$lambda_delta}nm at room temperature.  The excitation 
+	wavelength was {$lambda_exc ? $lambda_exc . 'nm' : 'unknown'}.
+    {$sensitizer_phrase}
+	</p>
+
+	<p style="text-align:center">
+	<A HREF="../data/{$name_id}-orig-ems.txt">Original Data</A> |
+	<A HREF="../data/{$name_id}-ems.txt">Emission Data</A> 
+	</p>
+
